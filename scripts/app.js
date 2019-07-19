@@ -11,21 +11,26 @@ window.addEventListener('DOMContentLoaded', (e) => {
         return dogHTML(dog)
       })
       // console.log(html);
-      dogsContainer.innerHTML += html
+      dogsContainer.innerHTML += html.join('')
     })
   }
 
   dogHTML = (url) => {
     return `
     <div class="column">
-      <img src="${url}" alt="Dog">
+      <img src="${url}" alt="Dog" id="${url.slice(-8, -4)}" onclick="photoClick(id)">
     </div>
     `
   }
-  //
-  // photoClick = () => {
-  //   console.log("I clicked a photo");
-  // }
+
+  photoClick = (id) => {
+    console.log("I clicked a photo", id);
+    
+  }
+
+  closePhoto = () => {
+    console.log("close dat photo plz");
+  }
 
   fetchDogs()
 
