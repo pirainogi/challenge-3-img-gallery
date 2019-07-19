@@ -8,7 +8,7 @@
           <link rel="stylesheet" href="./css/normalize.css">
           <link rel="stylesheet" href="./css/bootstrap.css">
           <link rel="stylesheet" href="./css/app.css">
-          <link rel="shortcut icon" href="/favicon.png">
+          <!-- <link rel="shortcut icon" href="/favicon.png"> -->
            <!--[if lt IE 9]>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
             <![endif]-->
@@ -18,7 +18,7 @@
            <div class="navbar navbar-default navbar-fixed-top">
               <div class="container">
                 <div class="navbar-header">
-                  <a href="./" class="navbar-brand">Light Image Gallery</a>
+                  <a href="./" class="navbar-brand">Doggos Image Gallery 🐕</a>
                   <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -28,7 +28,7 @@
                 <div class="navbar-collapse collapse" id="navbar-main">
                   <ul class="nav navbar-nav navbar-right">
                     <li>
-                      <a href="http://codecorgi.co">codecorgi</a>
+                      <a href="https://github.com/pirainogi">Gabbie Piraino</a>
                     </li>
                   </ul>
                 </div>
@@ -38,26 +38,41 @@
         <main>
           <div class="jumbotron">
             <div class="container">
-              <h1>Light Image Gallery</h1>
-              <p>Getting images from Imgur</p>
+              <h1>Doggos Image Gallery</h1>
+              <p>Getting images from <a href="https://dog.ceo/dog-api/">Dog API</a></p>
             </div>
           </div>
           <section class="container images full-width">
-              <div class="row image">
+              <!-- <div class="row image">
                   <h2><a href="http://imgur.com/gallery/7zMMi">The people behind the comics we see on the frontpage every day</a></h2>
                   <div>
                       <img src="https://i.imgur.com/YAoqrjz.jpg" alt="The people behind the comics we see on the frontpage every day" class="img-thumbnail">
                   </div>
-              </div>
-              <div class="row image">
+              </div> -->
+              <!-- <div class="row image">
                   <h2><a href="http://imgur.com/gallery/sc4nw">Weekend meme dump (50) - Mohstly fresh</a></h2>
                   <div>
                       <img src="https://i.imgur.com/nEIuGxy.png" alt="Weekend meme dump (50) - Mohstly fresh" class="img-thumbnail">
                   </div>
+              </div> -->
+              <div class="row" id="minidogs">
+                <!-- dogs will live here -->
               </div>
+
+              <!-- The expanding image container -->
+              <!-- <div class="container"> -->
+                <!-- Close the image -->
+                <!-- <span class="closebtn">&times;</span> -->
+
+                <!-- Expanded image -->
+                <!-- <img id="expandedImg" style="width:100%"> -->
+
+                <!-- Image text -->
+                <!-- <div id="imgtext"></div> -->
+              <!-- </div> -->
           </section>
+
         </main>
         <script src="./scripts/app.js"></script>
     </body>
 </html>
-
